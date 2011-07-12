@@ -1,0 +1,10 @@
+.formAnagram
+
+  = widget_div do
+    = form_tag "", "data-event-url" => url_for_event(:submit), :remote => true do
+      = text_field_tag 'anagram_text', 'Enter_Your_Data'
+      = label_tag 'anagram_text', 'Tab into box, enter your text, tab out' 
+      .linkTo#reset= link_to 'Reset', :root
+
+      = submit_tag "Submit Anagram", { :id => "submit" }
+

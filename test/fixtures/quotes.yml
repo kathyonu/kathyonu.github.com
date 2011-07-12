@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  text: MyFirstQuote
+  author: Moi
+  lifedates: Now
+  description: MyQuote
+
+two:
+  text: MySecondQuote
+  author: Moi
+  lifedates: Then
+  description: MyQuote2

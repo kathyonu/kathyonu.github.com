@@ -1,0 +1,140 @@
+.anagramEntry {
+  border: 13px solid navy;
+  border-left: 14px solid aqua;
+  border-right: 14px solid aqua;
+}
+
+.anagramWidgetDisplay {
+  background-color: #99CCFF;
+  border-top: 5px solid purple;
+  border-right: 11px solid purple;
+  border-bottom: 5px solid purple;
+  border-left: 11px solid purple;
+}
+
+.cellularQuote {
+  background-color: #FFFF99;
+  border-top: 5px solid maroon;
+  border-right: 10px solid maroon;
+  border-bottom: 15px solid maroon;
+  border-left: 25px solid maroon;
+}
+
+.codeSource {
+  background-color: yellow;
+}
+  
+.formAnagram {
+  border: 1px solid black;
+}
+
+.formAnagram #anagram form input#anagram_text {
+  border: 2px solid red;
+  background-color: #F9C8D8;
+}
+
+.formSequenceCreated {
+  border: 13px solid aqua;
+  border-top: 1px solid aqua;
+  border-bottom: 2px solid aqua;
+}
+
+.formSequenceCreated input {
+  border: 1px solid black;
+  background-color: #F9C8D8;
+}
+
+.newAnagram {
+  border: 10px solid yellow;
+}
+
+.newAnagram > div.field {
+  border: 2px solid blue;
+}
+
+.newAnagram > div.field#text {
+  border: 2px solid lime;
+}
+
+.sequenceCreatedWidgetDisplay {
+  background-color: #FFFDDA;
+  border-top: 5px solid purple;
+  border-right: 11px solid purple;
+  border-bottom: 5px solid purple;
+  border-left: 11px solid purple;
+}
+
+.noteSequenceCreated {
+  background-color: #F9C8D8;
+}
+
+.field_with_errors {
+  background-color: red;
+}
+
+.textFound {
+  border: 4px dotted yellow;
+}
+
+#currentTime {
+  border: 1px solid red;
+}
+
+#datepick {
+  border: 14px solid navy;
+  border-left: 14px solid aqua;
+  border-right: 4px solid navy;
+}
+
+#reset {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-left: 45px;
+}
+
+#sequence_text {
+  border: 1px solid red;
+}
+
+#sequenceTextHtml {
+  border: 1px solid navy;
+}
+
+#sequenceCreationHtml {
+  border: 1px solid navy;
+}
+
+#sequenceCompleteHtml {
+  border: 1px solid navy;
+}
+
+#sequenceLexigramHtml {
+  border: 1px solid navy;
+}
+
+#sequenceSingularHtml {
+  border: 1px solid navy;
+}
+
+#sequencerFirst {
+  border: 2px solid olive;
+}
+
+#sequencerSecond {
+  border: 2px solid olive;
+}
+
+#sequencerFirst > input > anagramEntry#anagram_text {
+  border: 10px solid red;
+}
+
+#kathyonu {
+  border: 2px solid #AA99C5;
+  border-bottom: 10px solid #AA99C5;
+}
+
+.kathyonu {
+  border: 2px solid #AA99C5;
+  border-top: 10px solid #AA99C5;
+  margin-top: 4px;
+}
