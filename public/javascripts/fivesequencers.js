@@ -1,4 +1,4 @@
-    // this file affects KathyOnuGithubCom/app/widgets/anagram/_form.html.haml
+// this file affects KathyOnuGithubCom/app/widgets/anagram/_form.html.haml
 // this file affects KathyOnuGithubCom/app/widgets/sequence_created/_form.html.haml
 
 $j(document).ready(
@@ -26,17 +26,17 @@ $j(document).ready(
           $j('p').addClass('explains');
           var text = anagramtext.value.toString();
           $j('form[0] > input#sequence_text').val(text);
-          var creation = anagramtext.value.toString();
-          $j('form[0] > input#sequence_creation').val(creation);
-          var complete = anagramtext.value.split('').sort().join('');
+          var $jcreation = anagramtext.value.toString();
+          $j('form[0] > input#sequence_creation').val(($jcreation.toString().replace(/\s/g,'')));
+          var complete = anagramtext.value.split('').sort().join('').trim();
           $j('form[0] > input#sequence_complete').val(complete);
-          var lexigrams = anagramtext.value.split('').sort().reverse().join('');
+          var lexigrams = anagramtext.value.split('').sort().reverse().join('').trim();
           $j('form[0] > input#sequence_lexigram').val(lexigrams);
-          var singulars = lexigrams.split('').sort(); 
-          var singular = $j.unique(singulars).reverse(); 
-          $j('form[0] > input#sequence_singular').val(singular);
+          var $jsingulars = lexigrams.split('').sort(); 
+          var $jsingular = $j.unique($jsingulars).reverse();
+          $j('form[0] > input#sequence_singular').val(($jsingular.toString().replace(/,/g,'')));
         }
-        else
+          else
         {
           $j('form[0] > input#anagram_text').val("Please Enter Your Data");
         }

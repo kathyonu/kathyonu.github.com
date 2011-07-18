@@ -10,6 +10,6 @@ KathyonuGithubCom::Application.routes.draw do
 
   get "sequencer/display"
   
-  root :to => "dashboard#index"
+  #root :to => "dashboard#index"
 
 end

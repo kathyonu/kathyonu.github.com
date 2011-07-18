@@ -1,24 +1,18 @@
 .formSequenceCreated
 
-  %p.explain= "these sequences are not yet fully processed properly"
-
   = widget_div do
     = form_tag "", "data-event-url" => url_for_event(:submit), :remote => true do
       = text_field_tag 'sequence_text'
       = label_tag 'sequence_text', 'sequence_text'
       %small=" is your text entry"
       = text_field_tag 'sequence_creation'
-      = label_tag 'sequence_creation', 'sequence_creation'
-      %small=" correct minus spaces"
+      = label_tag 'sequence_creation', 'sequenced_creation'
       = text_field_tag 'sequence_complete'
-      = label_tag 'sequence_complete', 'sequence_complete'
-      %small=" correct, minus l spaces"
+      = label_tag 'sequence_complete', 'sequenced_complete'
       = text_field_tag 'sequence_lexigram'
-      = label_tag 'sequence_lexigram', 'sequence_reverse'
-      %small=" correct, minus r spaces"
+      = label_tag 'sequence_lexigram', 'sequenced_reversed'
       = text_field_tag 'sequence_singular'
-      = label_tag 'sequence_singular', 'sequence_singular'
-      %small=" correct, minus commas"
+      = label_tag 'sequence_singular', 'sequenced_singular'
 
       .submitsequences 
 

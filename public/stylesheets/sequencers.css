@@ -138,6 +138,13 @@
   right: 5px;
 }
 
+#reset {
+  font-size: 80%;
+  margin-right: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+
 #sequence_text {
   font-size: 80%;
 }
