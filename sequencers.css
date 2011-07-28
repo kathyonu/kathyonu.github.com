@@ -1,0 +1,60 @@
+.actions {
+  font-size: 12px;
+  margin-left: 45px;
+}
+
+#kathyonu {
+  font-size: 11px;
+  margin-top: 15px;
+  margin-left: 24px;
+  text-align: left;
+}
+
+label {
+  font-size: 12px;
+  margin: 5px;
+  padding-top: 6px;
+  border: 1px solid yellow;
+}
+
+input {
+  font-size: 12px;
+  margin: 5px;
+  padding-top: 6px;
+}
+
+#sequenceEntry {
+  border: 1px solid blue;
+  font-size: 14px;
+  padding: 5px;
+}
+
+#sequence_sequence_text {
+  font-size: 1em;
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+#sequence_sequence_creation {
+  font-size: 1em;
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+#sequence_sequence_complete {
+  font-size: 1em;
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+#sequence_sequence_lexigram {
+  font-size: 1em;
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+#sequence_sequence_singular {
+  font-size: 1em;
+  border: 1px solid blue;
+  padding: 5px;
+}
