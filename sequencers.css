@@ -1,3 +1,9 @@
+body {
+  margin: 20px;
+  padding: 5px;
+  width: 555px;
+}
+
 .actions {
   font-size: 12px;
   margin-left: 45px;
@@ -14,7 +20,17 @@ label {
   font-size: 12px;
   margin: 5px;
   padding-top: 6px;
-  border: 1px solid yellow;
+  padding-left: 4px;
+  border-left: 2px solid blue;
+  border-bottom: 2px solid blue;
+}
+
+.newSequence {
+  border: 4px solid teal;
+}
+
+.sequenceDisplay {
+  border: 4px solid navy;
 }
 
 input {
@@ -29,32 +45,31 @@ input {
   padding: 5px;
 }
 
+.sequenceSequencer {
+  border: 4px solid blue;
+}
+
 #sequence_sequence_text {
   font-size: 1em;
-  border: 1px solid blue;
   padding: 5px;
 }
 
 #sequence_sequence_creation {
   font-size: 1em;
-  border: 1px solid blue;
   padding: 5px;
 }
 
 #sequence_sequence_complete {
   font-size: 1em;
-  border: 1px solid blue;
   padding: 5px;
 }
 
 #sequence_sequence_lexigram {
   font-size: 1em;
-  border: 1px solid blue;
   padding: 5px;
 }
 
 #sequence_sequence_singular {
   font-size: 1em;
-  border: 1px solid blue;
   padding: 5px;
 }

@@ -14,34 +14,32 @@
 
 <body>
 
-
 <h1>Sequencers</h1>
 
   <div class="sequenceDisplay">
-    <div id="sequencerSequence" class="sequenceSequencer">
- 
-<div class="newSequence">
+    <div class="sequenceSequencer">
+      <div class="newSequence">
 
 <form accept-charset="UTF-8" action="/sequences" class="new_sequence" id="new_sequence" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="r4d16UowqUu0URRczYvafcJXE/7b0Q+4+VQpiwj2Puw=" /></div>
 
      <p>
-        <input id="sequenceEntry" name="sequenceEntry" type="string" value="Enter Your Data Here, then tab out" size="45" tabindex=1 />
+        <input id="sequenceEntry" name="sequenceEntry" type="string" value="Enter Your Data Here, then tab out" size="53" tabindex=1 />
       </p>
 
   <div class="field">
-    <label for="sequence_sequence_text">Your Text's Created Sequence</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="sequence_sequence_text" name="sequence[sequence_text]" size="35" type="text" />
+    <label for="sequence_sequence_text">Your Text's Created Sequence</label><input id="sequence_sequence_text" name="sequence[sequence_text]" size="40" type="text" />
   </div>
   <div class="field">
-    <label for="sequence_sequence_creation">Your Text's Creation Sequence</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="sequence_sequence_creation" name="sequence[sequence_creation]" size="35" type="text" />
+    <label for="sequence_sequence_creation">Your Text's Creation Sequence</label> <input id="sequence_sequence_creation" name="sequence[sequence_creation]" size="39" type="text" />
   </div>
   <div class="field">
-    <label for="sequence_sequence_complete">Your Text's Complete Sequence</label>&nbsp;&nbsp;&nbsp; <input id="sequence_sequence_complete" name="sequence[sequence_complete]" size="35" type="text" />
+    <label for="sequence_sequence_complete">Your Text's Complete Sequence</label> <input id="sequence_sequence_complete" name="sequence[sequence_complete]" size="38" type="text" />
   </div>
   <div class="field">
-    <label for="sequence_sequence_lexigram">Complete Sequence Reversed</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp; <input id="sequence_sequence_lexigram" name="sequence[sequence_lexigram]" size="35" type="text" />
+    <label for="sequence_sequence_lexigram">Complete Sequence Reversed</label>&nbsp;&nbsp;&nbsp; <input id="sequence_sequence_lexigram" name="sequence[sequence_lexigram]" size="38" type="text" />
   </div>
   <div class="field">
-    <label for="sequence_sequence_singular">Your Text's Singular Sequence</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="sequence_sequence_singular" name="sequence[sequence_singular]" size="27" type="text" />
+    <label for="sequence_sequence_singular">Your Text's Singular Sequence</label> <input id="sequence_sequence_singular" name="sequence[sequence_singular]" size="27" type="text" />
   </div>
 
 
@@ -91,7 +89,7 @@ $(document).ready(
           var lexigrams = (this.value).split('').sort().reverse().join('').trim();
           $('input#sequence_sequence_lexigram').val(lexigrams);
           var $singulars = lexigrams.split('').sort(); 
-          var $singular = $.unique($singulars);
+          var $singular = $.unique($singulars).reverse();
           $('input#sequence_sequence_singular').val(($singular.toString().replace(/,/g,'')));
         }
           else {
