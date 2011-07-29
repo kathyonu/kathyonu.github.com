@@ -49,27 +49,27 @@ input {
   border: 4px solid blue;
 }
 
-#sequence_sequence_text {
-  font-size: 1em;
+#sequenceSequenceText {
+  font-size: 100%;
   padding: 5px;
 }
 
-#sequence_sequence_creation {
-  font-size: 1em;
+#sequenceSequenceCreation {
+  font-size: 100%;
   padding: 5px;
 }
 
-#sequence_sequence_complete {
-  font-size: 1em;
+#sequenceSequenceComplete {
+  font-size: 100%;
   padding: 5px;
 }
 
-#sequence_sequence_lexigram {
-  font-size: 1em;
+#sequenceSequenceLexigram {
+  font-size: 100%;
   padding: 5px;
 }
 
-#sequence_sequence_singular {
-  font-size: 1em;
+#sequenceSequenceSingular {
+  font-size: 100%;
   padding: 5px;
 }
