@@ -1,17 +1,17 @@
 // resets the anagram and sequence_created forms
 
-$j(document).ready(
+$(document).ready(
   function() {
-    $j('#reset').bind(
+    $('input#formReset').bind(
       'click',function(event) {
-        $j('#anagram form input#anagram_text').empty();
-        $j('#anagram form input#description').empty();
-        $j('#anagram form input#reference').empty();
-        $j('#sequence_created form input#sequence_text').empty();
-        $j('#sequence_created form input#sequence_creation').empty();
-        $j('#sequence_created form input#sequence_complete').empty();
-        $j('#sequence_created form input#sequence_lexigram').empty();
-        $j('#sequence_created form input#sequence_singular').empty();
+        $('#anagram form input#anagram_text').empty();
+        $('#anagram form input#description').empty();
+        $('#anagram form input#reference').empty();
+        $('#sequence_created form input#sequence_text').empty();
+        $('#sequence_created form input#sequence_creation').empty();
+        $('#sequence_created form input#sequence_complete').empty();
+        $('#sequence_created form input#sequence_lexigram').empty();
+        $('#sequence_created form input#sequence_singular').empty();
       }
     )
   });
