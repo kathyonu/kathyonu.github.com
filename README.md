@@ -1,15 +1,17 @@
-## Welcome to Sequencers, a simple app to generate various sequences of that which you enter.
+## Welcome to Sequencers
+a simple app to generate various sequences of that which you enter.
 
 You can see it in action at :
-* kathyonu.github.com/
+> [Sequencers](http://kathyonu.github.com/ "Textual Sequencers")
 
-> After you arrive, enter your text into the entry box,
-> when you tab or click out of the entry box, the five sequences
-> will be generated and entered into the sequence boxes,
-> without page change, using javascript with jQuery.
+> ##### After you arrive, enter your text into the entry box,
+> ##### when you tab or click out of the entry box, the various sequences
+> ##### will be generated and entered into their display boxes,
+> ##### without page change, using javascript with jQuery.
 
-Sequencers is a tiny slice of a much larger application based on Ruby on Rails using Apotomo on Cells. You can see that application here.
-* github.com/kathyonu/apotomoing_sequencers
+Sequencers is a tiny slice of a much larger application based on Ruby on Rails using Apotomo on Cells. 
+You can see that application here :
+> [apotomoing_sequencers](http://github.com/kathyonu/apotomoing_sequencers "Apotomoing Sequencers")
 
 > An anagrams generator is available now at [Wordsmith AnagramGenerator](http://www.wordsmith.org/ "Wordsmith.org AnagramGenerator")
 
