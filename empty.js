@@ -1,4 +1,4 @@
-// resets the forms in the anagram and sequence_created widgets
+// resets the anagram and sequence_created forms
 
 $j(document).ready(
   function() {
@@ -13,5 +13,5 @@ $j(document).ready(
         $j('#sequence_created form input#sequence_lexigram').empty();
         $j('#sequence_created form input#sequence_singular').empty();
       }
-    );
+    )
   });
