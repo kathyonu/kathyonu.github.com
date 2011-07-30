@@ -47,11 +47,13 @@
   <div class="field">
     <label for="sequence_sequence_singular">Your Text's Singular Sequence</label> <input id="sequence_sequence_singular" name="sequence[sequence_singular]" size="27" type="text">
   </div>
-
+  <div class="field">
+    <label for="sequence_sequence_singular_reverse">Singular Sequence Reversed</label> <input id="sequence_sequence_singular_reverse" name="sequence[sequence_singular_reverse]" size="27" type="text">
+  </div>
 
   <div class="actions">
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <small> Note: some broswers reverse the Singular Sequence.</small>
+      <small> Note: some broswers reverse the Singular Sequence, some do not.</small>
     <p>
       <input id="form_reset" name="form_reset" type="reset" value="Reset Form">
     </p>
@@ -90,13 +92,15 @@ $(document).ready(
           $('input#sequence_sequence_text').val(this.value);
           var $creation = (this.value).toString();
           $('input#sequence_sequence_creation').val(($creation.toString().replace(/\s/g,'')));
-          var complete = (this.value).split('').sort().join('').trim();
-          $('input#sequence_sequence_complete').val(complete);
+          var $complete = (this.value).split('').sort().join('').trim();
+          $('input#sequence_sequence_complete').val($complete);
           var lexigrams = (this.value).split('').sort().reverse().join('').trim();
           $('input#sequence_sequence_lexigram').val(lexigrams);
-          var $singulars = lexigrams.split('').sort(); 
-          var $singular = $.unique($singulars).reverse();
+          var $singulars = $complete.split('').sort();
+          var $singular = $.unique($singulars.reverse());
           $('input#sequence_sequence_singular').val(($singular.toString().replace(/,/g,'')));
+          var $singularreverse = $.unique($singular);
+          $('input#sequence_sequence_singular_reverse').val(($singularreverse.toString().replace(/,/g,'')));
         }
           else {
           $('input#sequenceEntry').val('Please Enter Your Data');
@@ -105,6 +109,7 @@ $(document).ready(
           $('#sequence_sequence_complete').val('');
           $('#sequence_sequence_lexigram').val('');
           $('#sequence_sequence_singular').val('');
+          $('#sequence_sequence_singular_reverse').val('');
        }
     })
   });
@@ -120,6 +125,7 @@ $(document).ready(
           $('#sequence_sequence_complete').val('');
           $('#sequence_sequence_lexigram').val('');
           $('#sequence_sequence_singular').val('');
+          $('#sequence_sequence_singular_reverse').val('');
         })
     });
 </script>
