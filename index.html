@@ -20,49 +20,43 @@
   <div class="sequenceDisplay">
     <div class="sequenceSequencer">
       <div class="newSequence">
-        <form accept-charset="UTF-8" action="/sequences" class="new_sequence" id="new_sequence" method="post"><div style="margin:0;padding:0;display:inline">
+        <form accept-charset="UTF-8" action="/sequences" method="post"><div style="margin:0;padding:0;display:inline">
+            <input id="sequenceEntry" name="sequenceEntry" type="TEXT" value="Enter Your Data Here, then tab out" size="53">
+          <div class="field">
+            <label for="sequence_sequence_text">Your Text's Created Sequence &nbsp;&nbsp;</label><input id="sequence_sequence_text" name="sequence[sequence_text]" size="40" type="text">
+          </div>
+          <div class="field">
+            <label for="sequence_sequence_creation">Your Text's Creation Sequence &nbsp;</label><input id="sequence_sequence_creation" name="sequence[sequence_creation]" size="40" type="text">
+          </div>
+          <div class="field">
+            <label for="sequence_sequence_complete">Your Text's Complete Sequence</label><input id="sequence_sequence_complete" name="sequence[sequence_complete]" size="40" type="text">
+          </div>
+          <div class="field">
+            <label for="sequence_sequence_lexigram">Complete Sequence Reversed &nbsp;&nbsp;&nbsp;</label><input id="sequence_sequence_lexigram" name="sequence[sequence_lexigram]" size="40" type="text">
+          </div>
+          <div class="field">
+            <label for="sequence_sequence_singular">Your Text's Singular Sequence &nbsp;</label><input id="sequence_sequence_singular" name="sequence[sequence_singular]" size="27" type="text">
+          </div>
+          <div class="field">
+            <label for="sequence_sequence_singular_reverse">Singular Sequence Reversed &nbsp;&nbsp;&nbsp;&nbsp;</label> <input id="sequence_sequence_singular_reverse" name="sequence[sequence_singular_reverse]" size="27" type="text">
+          </div>
+          <p id="note"> Note: some broswers reverse the Singular Sequence, some do not.</p>
+          <div class="actions"> 
+            <input id="form_reset" name="form_reset" type="reset" value="Reset Data">
+          </div>
+        </form>
       </div>
 
-      <p>
-        <input id="sequenceEntry" name="sequenceEntry" type="TEXT" value="Enter Your Data Here, then tab out" size="53" tabindex="1">
-      </p>
-
-    <div class="field">
-      <label for="sequence_sequence_text">Your Text's Created Sequence</label><input id="sequence_sequence_text" name="sequence[sequence_text]" size="40" type="text">
+  <div id="kathyonu">
+      Sequencers is a small part of the Book of Creations computer application, by 
+        <a href="http://www.goodworksonearth.org/board.html">Kathy Onu</a>
   </div>
-  <div class="field">
-    <label for="sequence_sequence_creation">Your Text's Creation Sequence</label> <input id="sequence_sequence_creation" name="sequence[sequence_creation]" size="39" type="text">
-  </div>
-  <div class="field">
-    <label for="sequence_sequence_complete">Your Text's Complete Sequence</label> <input id="sequence_sequence_complete" name="sequence[sequence_complete]" size="38" type="text">
-  </div>
-  <div class="field">
-    <label for="sequence_sequence_lexigram">Complete Sequence Reversed</label>&nbsp;&nbsp;&nbsp; <input id="sequence_sequence_lexigram" name="sequence[sequence_lexigram]" size="38" type="text">
-  </div>
-  <div class="field">
-    <label for="sequence_sequence_singular">Your Text's Singular Sequence</label> <input id="sequence_sequence_singular" name="sequence[sequence_singular]" size="27" type="text">
-  </div>
-  <div class="field">
-    <label for="sequence_sequence_singular_reverse">Singular Sequence Reversed</label> <input id="sequence_sequence_singular_reverse" name="sequence[sequence_singular_reverse]" size="27" type="text">
-  </div>
-
-  <div class="actions">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    <small> Note: some broswers reverse the Singular Sequence, some do not.</small>
-    <p>
-      <input id="form_reset" name="form_reset" type="reset" value="Reset Form">
-    </p>
-  </div>
-</form>
-</div>
     </div>
+      </div>
+
   </div>
 
-<div id="kathyonu">
-  <p>
-    Sequencers is a small part of the Book of Creations computer application, by 
-      <a href="http://www.goodworksonearth.org/board.html">Kathy Onu</a>
-  </p>
-</div>
+
 <script type="text/javascript">
 $(document).ready(
   function() {
